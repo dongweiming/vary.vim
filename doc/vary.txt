@@ -1,0 +1,59 @@
+*Vary.txt* For Vim version 7.3.    Last change: 2013 Sep 07
+
+Author:  Dong Weiming <ciici123@gmail.com>
+
+==============================================================================
+CONTENTS *vary-contents*
+
+    1. Introduction ....................... |vary-introduction|
+    1. Install ....................... |vary-install|
+    3. Usage .............................. |vary-usage|
+        3.1 auto_striptrail ....................... vary-striptrail|
+        3.2 auto_striptab ....................... vary-striptab|
+
+==============================================================================
+1. Introduction *Vary* *vary-introduction*
+
+Vary.vim is a script to converting tabs to spaces and auto save with remove End
+of line in end of line
+
+==============================================================================
+1. Install *vary-install*
+
+Note: I recommend using Tim Pope's pathogen plugin to install this.
+See https://github.com/tpope/vim-pathogen . If you've installed
+pathogen properly you can install Vary with the following commands,
+followed by the .vimrc configuration below.
+
+    $ cd ~/.vim/bundle
+    $ git clone https://github.com/dongweiming/vary.vim
+==============================================================================
+3. Usage *vary-usage*
+
+
+You can specify that you want to automatically replace the tab or trailing spaces
+ of language, the default is valid for Python
+
+3.1 auto_striptrail *vary-striptrail*
+
+This is configuration for strip trail, it will remove end of spaces in end of
+line. Specify the languages what you want to remove, You can use any character
+segmentation.
+
+Example: >
+
+    let g:auto_striptrail = "python,ruby"
+<
+
+3.2 auto_striptab *vary-striptab*
+
+This is configuration for converting tabs to spaces. But please make sure you
+are you are specifying the 'tabtop' -- The tab into the number of spaces.
+
+Example: >
+
+    set tabstop=4
+    let g:auto_striptab = "python,ruby,cpp"
+<
+
+Enjoy it.
