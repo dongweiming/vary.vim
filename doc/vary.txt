@@ -6,7 +6,7 @@ Author:  Dong Weiming <ciici123@gmail.com>
 CONTENTS *vary-contents*
 
     1. Introduction ....................... |vary-introduction|
-    1. Install ....................... |vary-install|
+    2. Install ....................... |vary-install|
     3. Usage .............................. |vary-usage|
         3.1 auto_striptrail ....................... vary-striptrail|
         3.2 auto_striptab ....................... vary-striptab|
@@ -18,7 +18,7 @@ Vary.vim is a script to converting tabs to spaces and auto save with remove End
 of line in end of line
 
 ==============================================================================
-1. Install *vary-install*
+2. Install *vary-install*
 
 Note: I recommend using Tim Pope's pathogen plugin to install this.
 See https://github.com/tpope/vim-pathogen . If you've installed
